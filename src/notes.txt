@@ -1,0 +1,39 @@
+Classical OOP : Classes
+
+Objects(instances) are instantiated from a class, which functions like a blueprint
+
+OOP in JS: Prototypes
+
+Prototype: Contain Methods
+Object: Can access Methods
+
+- Objects are linked to a prototype object
+- Prototypal inheritance: The prototype contains methods (behavior) that are accessible
+  to all object linked to that prototype
+- behavior is delegated to the linked prototype object
+
+3 Ways of Implementing Prototypal Inheritance in JS
+
+1. Constructor functions
+- Technique to create objects from a functions
+- This is how built-in objects like Arrays, Maps or Sets are actually implemented
+
+2. ES6 Classes
+- Modern alternative to constructor function syntax
+- Syntatic sugar: behind the scenes, ES6 classes work exactly like constructor functions
+- ES6 classes do NOT behave like classes in "classical OOP"
+
+3. Object.create()
+
+How Prototypal Inheritance / Delegation Works
+The new operator:
+1. An empty object is created
+2. This keyword in constructor function call is set to the new object
+3. The new object is linked (__proto__property) to the constructor function's 
+   prototype property.
+4. The new object is returned from the constructor function call
+
+- Clases are just Syntatic sugar over constructor functions
+- Classes are not hoisted
+- Classes are first-class citizens
+- Class bodyy is always executed in strict mode
